@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 440px) {
+  .nav-list li a {
+    font-size: 0.9rem;
+    transition: font-size 0.3s ease-in-out;
+  }
+
+  .hero p {
+    font-size: 0.7rem;
+  }
+}
+
+header {
+  background-color: #f7e7ce;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.nav-branding {
+  font-size: 2.1rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+  text-decoration: none;
+  color: #36454f;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.nav-list a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Start with no underline */
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
+}
+
+.nav-list a:hover::before {
+  width: 100%; /* Expand the underline on hover */
+}
+
+main {
+  background-color: ivory;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero {
+  margin-top: 2rem;
+  background-color: #d3d3d3;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #36454f;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #36454f;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 60ch;
+}
