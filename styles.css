@@ -65,7 +65,7 @@ nav {
   width: 0; /* Start with no underline */
   height: 2px;
   background-color: #74241f;
-  transition: width 0.5s ease-in-out; /* Smooth transition for the underline */
+  transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
 }
 
 .nav-item a:hover::before {
@@ -77,7 +77,7 @@ nav {
   display: none; /* Hide hamburger icon by default */
   cursor: pointer;
   margin-left: 1rem;
-  margin-top: 0.2rem;
+  outline: none;
 }
 
 .bar {
@@ -92,7 +92,7 @@ nav {
 
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger icon on smaller screens */
+    display: block; /* Show hamburger icon on smaller screens*/
   }
 
   header {
@@ -107,6 +107,10 @@ nav {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-branding {
+    margin-left: 1.2rem;
   }
 
   .nav-menu {
