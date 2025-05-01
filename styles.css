@@ -12,6 +12,12 @@
 
 header {
   background-color: #d3cec9;
+  min-height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .nav-branding {
@@ -30,12 +36,9 @@ nav {
 }
 
 .nav-menu {
-  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -73,6 +76,7 @@ nav {
 .hamburger {
   display: none; /* Hide hamburger icon by default */
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .bar {
@@ -103,13 +107,16 @@ nav {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 140px;
+    top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: #d3cec9;
     width: 100%;
     text-align: center;
     transition: left 0.3s;
+    height: auto;
+    z-index: 1000; /* Ensure menu is above other content */
+    padding: 1rem 0;
   }
 
   .nav-menu {
