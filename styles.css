@@ -12,12 +12,6 @@
 
 header {
   background-color: #d3cec9;
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 .nav-branding {
@@ -35,18 +29,21 @@ nav {
   align-items: center;
 }
 
-.nav-list {
+.nav-menu {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.nav-list li {
+.nav-item {
   margin: 0 1rem;
   list-style: none;
 }
 
-.nav-list a {
+.nav-item a {
   display: inline-block;
   padding-bottom: 0.25rem;
   position: relative;
@@ -57,7 +54,7 @@ nav {
   margin-right: 1rem;
 }
 
-.nav-list a::before {
+.nav-item a::before {
   content: '';
   position: absolute;
   left: 0;
@@ -68,7 +65,7 @@ nav {
   transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
 }
 
-.nav-list a:hover::before {
+.nav-item a:hover::before {
   color: #d3cec9;
   width: 100%; /* Expand the underline on hover */
 }
@@ -103,7 +100,7 @@ nav {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-list {
+  .nav-menu {
     position: fixed;
     left: -100%;
     top: 140px;
@@ -115,11 +112,11 @@ nav {
     transition: left 0.3s;
   }
 
-  .nav-items {
+  .nav-menu {
     margin: 1rem 0;
   }
 
-  .nav-list.active {
+  .nav-menu.active {
     left: 0; /* Slide in the menu when active */
   }
 }
@@ -213,11 +210,11 @@ body {
     font-size: 1.8rem; /* Reduce branding font size */
   }
 
-  .nav-list {
+  .nav-menu {
     margin-top: 1rem;
   }
 
-  .nav-list a {
+  .nav-item a {
     font-size: 1rem; /* Reduce link font size */
   }
 
@@ -236,7 +233,7 @@ body {
 
 /* Media Query for Extra Small Devices (max-width: 421px) */
 @media (max-width: 421px) {
-  .nav-list {
+  .nav-menu {
     font-size: 0.8rem; /* Reduce nav font size */
   }
 
