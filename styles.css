@@ -12,7 +12,7 @@
 
 header {
   background-color: #d3cec9;
-  min-height: 140px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,7 @@ header {
   font-weight: 600;
   cursor: pointer;
   color: #8e2e29;
+  text-decoration: none;
 }
 
 nav {
@@ -70,6 +71,57 @@ nav {
 .nav-list a:hover::before {
   color: #d3cec9;
   width: 100%; /* Expand the underline on hover */
+}
+
+.hamburger {
+  display: none; /* Hide hamburger icon by default */
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon on smaller screens */
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-list {
+    position: fixed;
+    left: -100%;
+    top: 140px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #d3cec9;
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s;
+  }
+
+  .nav-items {
+    margin: 1rem 0;
+  }
+
+  .nav-list.active {
+    left: 0; /* Slide in the menu when active */
+  }
 }
 
 main {
@@ -146,23 +198,6 @@ body {
 /* Media Query for Tablets (max-width: 768px) */
 /* todo replace this with putting nav in hamburger menu */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column; /* Stack navigation vertically */
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .nav-list {
-    flex-direction: column; /* Stack nav items vertically */
-    align-items: flex-start;
-    gap: 0.8rem; /*Add spacing between items*/
-    margin-top: 1rem;
-  }
-
-  .nav-branding {
-    font-weight: 900;
-  }
-
   .hero-header {
     font-size: 5rem; /* Reduce font size */
   }
@@ -218,5 +253,3 @@ body {
     padding: 1rem;
   }
 }
-
-/* TODO change the navigation on smaller screens */
