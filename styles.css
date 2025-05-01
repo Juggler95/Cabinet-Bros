@@ -1,14 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Luxurious Roman', serif;
 }
 
-@media (max-width: 535px) {
-  .nav-list li a {
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: font-size 0.3s ease-in-out;
-  }
+.luxurious-roman-regular {
+  font-family: 'Luxurious Roman', serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -95,6 +94,10 @@ main {
   border-bottom: 10px solid #74241f;
 }
 
+.hero-text {
+  margin-top: -18rem;
+}
+
 .hero-text h1 {
   font-size: 9rem;
   font-weight: 800;
@@ -117,6 +120,7 @@ main {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: white;
   z-index: 2; /* Ensure text is above the overlay */
+  max-width: 40ch;
 }
 
 .hero-image-overlay {
@@ -128,3 +132,85 @@ main {
   background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
   z-index: 1; /* Ensure the overlay is above the background image */
 }
+
+/* General Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack navigation vertically */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: flex-start;
+    gap: 1rem; /*Add spacing between items*/
+  }
+
+  .hero-text h1 {
+    font-size: 5rem; /* Reduce font size */
+  }
+
+  .hero-text p {
+    font-size: 2.5rem;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 535px) */
+@media (max-width: 535px) {
+  .nav-branding {
+    font-size: 1.8rem; /* Reduce branding font size */
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0; /* Add spacing between nav items */
+  }
+
+  .nav-list a {
+    font-size: 1rem; /* Reduce link font size */
+  }
+
+  .hero-text h1 {
+    font-size: 3rem; /* Further reduce hero heading size */
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem; /* Add padding for smaller screens */
+  }
+}
+
+/* Media Query for Extra Small Devices (max-width: 421px) */
+@media (max-width: 421px) {
+  .nav-list {
+    font-size: 0.8rem; /* Reduce nav font size */
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem; /* Adjust hero heading size */
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: auto; /* Allow hero section to adjust height */
+    padding: 1rem;
+  }
+}
+
+/* TODO fix navigation on smaller screen size */
+/* I believe it is with the margin on something in the hero or navigation */
