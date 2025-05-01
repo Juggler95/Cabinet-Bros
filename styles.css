@@ -65,7 +65,7 @@ nav {
   width: 0; /* Start with no underline */
   height: 2px;
   background-color: #74241f;
-  transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
+  transition: width 0.5s ease-in-out; /* Smooth transition for the underline */
 }
 
 .nav-item a:hover::before {
@@ -76,7 +76,7 @@ nav {
 .hamburger {
   display: none; /* Hide hamburger icon by default */
   cursor: pointer;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .bar {
@@ -86,12 +86,21 @@ nav {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #74241f;
 }
 
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* Show hamburger icon on smaller screens */
+    /* order: 2; */
+  }
+
+  .nav-branding {
+    /* order: 1; */
+  }
+
+  header {
+    justify-content: center;
   }
 
   .hamburger.active .bar:nth-child(2) {
