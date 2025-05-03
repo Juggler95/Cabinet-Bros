@@ -41,6 +41,16 @@ header {
   cursor: pointer;
   color: #8e2e29;
   text-decoration: none;
+  position: relative;
+
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.nav-branding:hover {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: #b41d10; /* Change color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
 nav {
@@ -114,7 +124,7 @@ main {
 }
 
 .hero {
-  background-image: url('images/kitchenpicture.png');
+  background-image: url('https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
