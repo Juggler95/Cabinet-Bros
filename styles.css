@@ -1,7 +1,25 @@
+/* feat: Document current color palette for the website
+
+Added a summary of the current color palette used across the website for consistency and future reference:
+
+- Primary Button Background: #74241f (Dark Red)
+- Button Hover Background: #a13129 (Lighter Red)
+- Header Background: #d3cec9 (Light Beige)
+- Text Color: #8e2e29 (Dark Brown)
+- Contact Button Text: ivory (#FFFFF0)
+- Hero Section Text Shadow: rgba(0, 0, 0, 0.5) (Semi-transparent Black)
+
+This palette ensures a cohesive and luxurious aesthetic for the website. */
+
+/* color palete ivory (#FFFFF0), #d3cec9, #74241f, #8e2e29, */
+
+/* new color palete  #000000, #FFFFFF, #4F2F16, #D9AD6A, #EEDBB9*/
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'Luxurious Roman', serif;
+  box-sizing: border-box;
 }
 
 .luxurious-roman-regular {
@@ -66,7 +84,7 @@ nav {
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   list-style: none;
 }
 
@@ -184,20 +202,37 @@ main {
   background-color: #74241f;
   color: ivory;
   padding: 1rem 6rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: 800;
+
   text-decoration: none;
   border-radius: 1rem;
+
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin-top: 2rem;
   position: relative;
-  z-index: 1000; /* Ensure button is above other content */
+  z-index: 1; /* Ensure button is above other content */
 }
 
 .contact-us:hover {
   background-color: #a13129;
 }
+
+/* WIP border animation */
+/* .contact-us:hover::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(red, blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 0.25rem;
+  border-radius: 1rem;
+} */
 
 /* Media Query for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
