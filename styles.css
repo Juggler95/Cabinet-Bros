@@ -215,24 +215,47 @@ main {
   position: relative;
   z-index: 1; /* Ensure button is above other content */
 }
-
+/* 
 .contact-us:hover {
   background-color: #b59763;
+} */
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
-/* .contact-us:hover::after {
+/* .contact-us::before {
+  filter: blur(1.5rem);
+  opacity: 0.7;
+} */
+
+.contact-us:hover::after,
+.contact-us:hover::before {
   content: '';
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(red, blue);
+  /* background-color: #4f2f16; */
+  background-image: conic-gradient(from var(--angle), transparent 50%, #4f2f16);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
   padding: 0.25rem;
   border-radius: 1rem;
-} */
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
 
 /* Media Query for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
