@@ -11,9 +11,9 @@ Added a summary of the current color palette used across the website for consist
 
 This palette ensures a cohesive and luxurious aesthetic for the website. */
 
-/* color palete ivory (#FFFFF0), #d3cec9, #74241f, #8e2e29, */
+/* color palete ivory, #d3cec9, #74241f, #8e2e29, #a13129*/
 
-/* new color palete  #000000, #FFFFFF, #4F2F16, #D9AD6A, #EEDBB9*/
+/* new color palete  #FFFFFF, #EEDBB9, #4F2F16, #D9AD6A, #000000, */
 
 * {
   padding: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 header {
-  background-color: #d3cec9;
+  background-color: #eedbb9;
   min-height: 140px;
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ header {
   margin-left: 1rem;
   font-weight: 600;
   cursor: pointer;
-  color: #8e2e29;
+  color: #4f2f16;
   text-decoration: none;
   position: relative;
 
@@ -67,7 +67,7 @@ header {
 .nav-branding:hover {
   text-decoration: none;
   font-size: 2.3rem;
-  color: #b41d10; /* Change color on hover */
+  color: #7f4920; /* Change color on hover */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
@@ -93,7 +93,7 @@ nav {
   padding-bottom: 0.25rem;
   position: relative;
   text-decoration: none;
-  color: #8e2e29;
+  color: #4f2f16;
   font-size: 1.6rem;
   font-weight: 700;
   margin-right: 1rem;
@@ -106,12 +106,12 @@ nav {
   bottom: 0;
   width: 0; /* Start with no underline */
   height: 2px;
-  background-color: #74241f;
+  background-color: #d9ad6a;
   transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
 }
 
 .nav-item a:hover::before {
-  color: #d3cec9;
+  color: #eedbb9;
   width: 100%; /* Expand the underline on hover */
 }
 
@@ -129,7 +129,7 @@ nav {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #74241f;
+  background-color: #d9ad6a;
 }
 
 main {
@@ -153,7 +153,7 @@ main {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   position: relative;
-  border-bottom: 10px solid #74241f;
+  /* border-bottom: 10px solid #d9ad6a; */
   z-index: -1000;
 }
 
@@ -166,7 +166,7 @@ main {
   font-weight: 800;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  color: white;
+  color: #ffffff;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
@@ -183,7 +183,7 @@ main {
   padding-right: 1rem;
   margin-bottom: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #ffffff;
   z-index: 2; /* Ensure text is above the overlay */
   max-width: 40ch;
 }
@@ -199,8 +199,8 @@ main {
 }
 
 .contact-us {
-  background-color: #74241f;
-  color: ivory;
+  background-color: #eedbb9;
+  color: #4f2f16;
   padding: 1rem 6rem;
   margin-top: 2rem;
   font-size: 1.5rem;
@@ -216,10 +216,9 @@ main {
 }
 
 .contact-us:hover {
-  background-color: #a13129;
+  background-color: #b59763;
 }
 
-/* WIP border animation */
 /* .contact-us:hover::after {
   content: '';
   position: absolute;
@@ -264,7 +263,7 @@ main {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #d3cec9;
+    background-color: #eedbb9;
     width: 100%;
     text-align: center;
     transition: left 0.3s;
