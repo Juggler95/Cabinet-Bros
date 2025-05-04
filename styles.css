@@ -215,23 +215,23 @@ main {
   position: relative;
   z-index: 1; /* Ensure button is above other content */
 }
-/* 
+
 .contact-us:hover {
   background-color: #b59763;
-} */
+}
 
-@property --angle {
+/* @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
-}
+} */
 
 /* .contact-us::before {
   filter: blur(1.5rem);
   opacity: 0.7;
 } */
 
-.contact-us:hover::after,
+/* .contact-us:hover::after,
 .contact-us:hover::before {
   content: '';
   position: absolute;
@@ -245,16 +245,16 @@ main {
   padding: 0.25rem;
   border-radius: 1rem;
   animation: 3s spin linear infinite;
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     --angle: 0deg;
   }
   to {
     --angle: 360deg;
   }
-}
+} */
 
 /* Media Query for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
