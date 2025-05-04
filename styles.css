@@ -237,7 +237,6 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-color: #4f2f16; */
   background-image: conic-gradient(from var(--angle), transparent 50%, #4f2f16);
   top: 50%;
   left: 50%;
