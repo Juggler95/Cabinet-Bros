@@ -52,7 +52,14 @@ header {
   flex-wrap: wrap;
 }
 
-.nav-branding {
+.nav-logo {
+  max-width: 100px;
+  min-height: 100px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* .nav-branding {
   font-size: 2.1rem;
   margin-left: 1rem;
   font-weight: 600;
@@ -61,15 +68,15 @@ header {
   text-decoration: none;
   position: relative;
 
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-branding:hover {
   text-decoration: none;
   font-size: 2.3rem;
-  color: #7f4920; /* Change color on hover */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
-}
+  color: #7f4920;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
 
 nav {
   display: flex;
@@ -260,10 +267,11 @@ main {
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* Show hamburger icon on smaller screens*/
+    margin-right: 1.5rem;
   }
 
   header {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -276,14 +284,10 @@ main {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-branding {
-    margin-left: 1.2rem;
-  }
-
   .nav-menu {
     position: absolute;
     left: -100%;
-    top: 70px;
+    top: 100px;
     gap: 0;
     flex-direction: column;
     background-color: #eedbb9;
@@ -291,7 +295,7 @@ main {
     text-align: center;
     transition: left 0.3s;
     height: auto;
-    z-index: 1000; /* Ensure menu is above other content */
+    z-index: 10; /* Ensure menu is above other content */
     padding: 1rem 0;
   }
 
