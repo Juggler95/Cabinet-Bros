@@ -35,6 +35,7 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  position: relative;
 }
 
 body {
@@ -53,8 +54,8 @@ header {
 }
 
 .nav-logo {
-  max-width: 100px;
-  min-height: 100px;
+  max-width: 125px;
+  height: auto;
   margin-top: 1rem;
   cursor: pointer;
 }
