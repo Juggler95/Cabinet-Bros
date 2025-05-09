@@ -33,6 +33,10 @@ body {
   position: relative;
 }
 
+body {
+  background-color: #d3cec9;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -57,9 +61,9 @@ main {
 
 .contact-form-section {
   display: flex;
-  width: 50%;
+  max-width: 40%;
   min-height: 600px;
-  
+
   background-color: #d3cec9;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -73,6 +77,7 @@ main {
   flex-direction: column;
   /* background-color: lime; */
   gap: 1rem;
+  padding-inline: 10ch;
 }
 
 .contact-form:first-child {
@@ -114,6 +119,7 @@ input::placeholder {
 label {
   margin-bottom: 0.5rem;
   color: #74241f;
+  font-weight: 600;
 }
 
 .message {
@@ -130,11 +136,11 @@ label {
   min-height: 2rem;
 }
 
-.image-upload::before{
-  content:"";
+.image-upload::before {
+  content: '';
   display: flex;
 
   padding: 6px 12px;
-  margin-right:22px;
+  margin-right: 22px;
   /* background:grey; */
 }
