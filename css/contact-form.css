@@ -57,6 +57,7 @@ main {
   margin-top: 2rem;
   color: ivory;
   text-shadow: -0.1ch 0.15ch 2px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 .contact-form-section {
@@ -90,7 +91,7 @@ main {
 }
 
 input {
-  max-width: 50ch;
+  max-width: 60ch;
   min-height: 1.5rem;
   font-family: sans-serif;
   border: none;
@@ -143,4 +144,35 @@ label {
   padding: 6px 12px;
   margin-right: 22px;
   /* background:grey; */
+}
+
+@media (max-width: 1051px) {
+  .contact-form-section {
+    width: 60%;
+    max-width: none;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  input {
+    max-width: 60ch;
+  }
+}
+
+@media (max-width: 470px) {
+  .form-header {
+    font-size: 4rem;
+  }
+
+  .contact-form-section {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }
