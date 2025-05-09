@@ -54,6 +54,16 @@ header {
   /* border-bottom: 1rem solid #8e2e29; */
 }
 
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100rem;
+  z-index: -1;
+  flex-direction: column;
+}
+
 .nav-logo {
   max-width: 125px;
   height: auto;
@@ -140,15 +150,6 @@ nav {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #a13129;
-}
-
-main {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 100rem;
-  z-index: -1;
 }
 
 .hero {
