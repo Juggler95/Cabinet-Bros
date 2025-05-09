@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-      <a href="#home" class="nav-branding"
+      <a href="/html/index.html" class="nav-branding"
         ><img class="nav-logo" src="/images/cabinet-bros-logo.png" alt="logo"
       /></a>
 
       <nav>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="/html/index.html">Home</a></li>
           <li class="nav-item"><a href="#">Styles</a></li>
           <li class="nav-item"><a href="#">About</a></li>
           <li class="nav-item"><a href="#">Contact</a></li>
@@ -30,47 +30,71 @@
     </header>
 
     <main>
+      <h1 class="form-header">Contact Us</h1>
+
       <section class="contact-form-section">
-        <h1 id="contact-us">Contact Us</h1>
-        <form action="#">
-          <label for="fname">First Name*</label>
-          <input
-            type="text"
-            placeholder="John"
-            id="fname"
-            class="fname"
-            required
-          />
+        <form action="#" class="contact-form">
+          <div class="input-section">
+            <label for="fname" class="fname">First Name*</label>
+            <input
+              type="text"
+              placeholder="John"
+              id="fname"
+              class="fname"
+              required
+            />
+          </div>
 
-          <label for="lname">Last Name*</label>
-          <input
-            type="text"
-            placeholder="Doe"
-            id="fname"
-            class="fname"
-            required
-          />
+          <div class="input-section">
+            <label for="lname" class="lname">Last Name*</label>
+            <input
+              type="text"
+              placeholder="Doe"
+              id="fname"
+              class="fname"
+              required
+            />
+          </div>
 
-          <label for="email">Email*</label>
-          <input
-            type="email"
-            placeholder=" Example@gmail.com"
-            id="email"
-            class="email"
-            required
-          />
+          <div class="input-section">
+            <label for="email" class="email">Email*</label>
+            <input
+              type="email"
+              placeholder=" JohnDoe@gmail.com"
+              id="email"
+              class="email"
+              required
+            />
+          </div>
 
-          <label for="phone-number">Phone*</label>
-          <input
-            type="phone-number"
-            placeholder="(XXX)XXX-XXXX"
-            id="name"
-            class="name"
-            required
-          />
+          <div class="input-section">
+            <label for="phone-number" class="phone-number">Phone*</label>
+            <input
+              type="tel"
+              placeholder="(XXX)XXX-XXXX"
+              id="tel"
+              class="tel"
+              minlength="10"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label for="Message" class="message">Message</label>
+            <input
+              type="text"
+              placeholder="this is a message."
+              id="message"
+              class="message"
+              row="4"
+            />
+          </div>
+
+          <button type="submit">Sumbit</button>
         </form>
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
