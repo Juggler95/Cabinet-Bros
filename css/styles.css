@@ -71,25 +71,6 @@ main {
   cursor: pointer;
 }
 
-/* .nav-branding {
-  font-size: 2.1rem;
-  margin-left: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  color: #4f2f16;
-  text-decoration: none;
-  position: relative;
-
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-branding:hover {
-  text-decoration: none;
-  font-size: 2.3rem;
-  color: #7f4920;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -364,7 +345,7 @@ nav {
     font-size: 0.8rem; /* Reduce nav font size */
   }
 
-  .hero-text h1 {
+  .hero-header {
     font-size: 2.5rem; /* Adjust hero heading size */
   }
 
