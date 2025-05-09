@@ -35,29 +35,30 @@
       <section class="contact-form-section">
         <form action="#" class="contact-form">
           <div class="input-section">
-            <label for="fname" class="fname">First Name*</label>
+            <label for="fname" class="fname-label">First Name*</label>
             <input
               type="text"
               placeholder="John"
               id="fname"
               class="fname"
               required
+              autofocus
             />
           </div>
 
           <div class="input-section">
-            <label for="lname" class="lname">Last Name*</label>
+            <label for="lname" class="lname-label">Last Name*</label>
             <input
               type="text"
               placeholder="Doe"
-              id="fname"
-              class="fname"
+              id="lname"
+              class="lname"
               required
             />
           </div>
 
           <div class="input-section">
-            <label for="email" class="email">Email*</label>
+            <label for="email" class="email-label">Email*</label>
             <input
               type="email"
               placeholder=" JohnDoe@gmail.com"
@@ -68,7 +69,7 @@
           </div>
 
           <div class="input-section">
-            <label for="phone-number" class="phone-number">Phone*</label>
+            <label for="phone-number" class="phone-number-label">Phone*</label>
             <input
               type="tel"
               placeholder="(XXX)XXX-XXXX"
@@ -80,18 +81,26 @@
           </div>
 
           <div class="input-section">
-            <label for="Message" class="message">Message*</label>
+            <label for="Message" class="message-label">Message</label>
             <input
               type="text"
               placeholder="this is a message."
               id="message"
               class="message"
-              row="4"
-              required
             />
           </div>
 
-          <button type="submit">Sumbit</button>
+          <div class="input-section">
+            <label for="Images" class="image-upload-label">Upload images</label>
+            <input
+              id="image-upload"
+              class="image-upload"
+              type="file"
+              multiple
+            />
+          </div>
+
+          <button type="submit" class="input-button">Sumbit</button>
         </form>
       </section>
     </main>

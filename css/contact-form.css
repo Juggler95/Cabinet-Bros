@@ -18,6 +18,7 @@ This palette ensures a cohesive and luxurious aesthetic for the website. */
 * {
   margin: 0;
   padding: 0;
+  outline: none;
   font-family: 'Luxurious Roman', serif;
   box-sizing: border-box;
 }
@@ -39,7 +40,7 @@ main {
   border: 0.5rem solid ivory;
   border-left: none;
   border-right: none;
-  background-color: #74241f;
+  background-color: #8e2e29;
   padding-bottom: 20rem;
 
   width: 100%;
@@ -63,6 +64,8 @@ main {
   margin-top: 2rem;
   border-radius: 0.5rem;
   justify-content: center;
+  border: 0.25rem solid;
+  box-shadow: 0 0 0.7rem 2px rgba(255, 255, 255, 0.8);
 }
 
 .contact-form {
@@ -72,8 +75,8 @@ main {
   gap: 1rem;
 }
 
-.contact-form:first-child{
-  margin-top: 2rem;
+.contact-form:first-child {
+  margin-top: 4rem;
 }
 
 .input-section {
@@ -81,11 +84,46 @@ main {
   flex-direction: column;
 }
 
-
 input {
   width: 50ch;
   min-height: 1.5rem;
   font-family: sans-serif;
+  border: none;
+  border-bottom: 0.13rem solid #8e2e29;
+  background-color: rgb(211, 206, 201);
+  /* border-radius: 3px; */
+  transition: all 0.3s ease;
 }
 
+input:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 0.15rem solid #8e2e29;
+}
 
+input:valid {
+  border-bottom: 0.15rem solid rgb(14, 212, 14);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #74241f;
+}
+
+.message {
+  /* margin-top: 1rem; */
+  min-height: 3rem;
+}
+
+.message:valid,
+.image-upload:valid {
+  border-bottom: 0.13rem solid #8e2e29;
+}
+
+.image-upload {
+  min-height: 2rem;
+}
