@@ -57,9 +57,9 @@ main {
 
 .contact-form-section {
   display: flex;
-  min-width: 600px;
-  max-width: 600px;
-  min-height: 800px;
+  width: 50%;
+  min-height: 600px;
+  
   background-color: #d3cec9;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -90,8 +90,10 @@ input {
   font-family: sans-serif;
   border: none;
   border-bottom: 0.13rem solid #8e2e29;
-  background-color: rgb(211, 206, 201);
-  /* border-radius: 3px; */
+  /* background-color: rgb(211, 206, 201); */
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
@@ -126,4 +128,13 @@ label {
 
 .image-upload {
   min-height: 2rem;
+}
+
+.image-upload::before{
+  content:"";
+  display: flex;
+
+  padding: 6px 12px;
+  margin-right:22px;
+  /* background:grey; */
 }
