@@ -139,6 +139,10 @@ label {
   min-height: 2rem;
 }
 
+.submit-button{
+  /* background-color: ; */
+}
+
 .image-upload::before {
   content: '';
   display: flex;
