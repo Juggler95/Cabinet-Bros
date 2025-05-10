@@ -34,9 +34,8 @@
 
       <section class="contact-form-section">
         <form
-          action="#"
+          action="https://formsubmit.co/fireboltisaac@gmail.com"
           method="POST"
-          enctype="multipart/form-data"
           class="contact-form"
         >
           <div class="input-section">
@@ -45,6 +44,7 @@
               type="text"
               placeholder="John"
               id="fname"
+              name="fname"
               class="fname"
               required
               autofocus
@@ -55,6 +55,7 @@
             <label for="lname" class="lname-label">Last Name*</label>
             <input
               type="text"
+              name="lname"
               placeholder="Doe"
               id="lname"
               class="lname"
@@ -68,6 +69,7 @@
               type="email"
               placeholder=" JohnDoe@gmail.com"
               id="email"
+              name="email"
               class="email"
               required
             />
@@ -79,6 +81,7 @@
               type="tel"
               placeholder="(XXX)XXX-XXXX"
               id="tel"
+              name="tel"
               class="tel"
               minlength="10"
               required
@@ -91,6 +94,7 @@
               type="text"
               placeholder="this is a message."
               id="message"
+              name="message"
               class="message"
             />
           </div>
@@ -100,6 +104,7 @@
             <input
               id="image-upload"
               class="image-upload"
+              name="file"
               type="file"
               multiple
             />
