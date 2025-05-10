@@ -78,7 +78,6 @@ main {
 .contact-form {
   display: flex;
   flex-direction: column;
-  /* background-color: lime; */
   gap: 1rem;
   padding-inline: 10ch;
 }
@@ -101,7 +100,7 @@ input {
   /* background-color: rgb(211, 206, 201); */
   background-color: rgb(255, 255, 255);
 
-  border-radius: 3px;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
 }
 
@@ -117,6 +116,7 @@ input:valid {
 
 input::placeholder {
   color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
 }
 
 label {
@@ -139,10 +139,6 @@ label {
   min-height: 2rem;
 }
 
-.submit-button{
-  /* background-color: ; */
-}
-
 .image-upload::before {
   content: '';
   display: flex;
@@ -150,6 +146,44 @@ label {
   padding: 6px 12px;
   margin-right: 22px;
   /* background:grey; */
+}
+
+.image-upload::after {
+  content: '';
+  display: flex;
+
+  padding: 6px 12px;
+  margin-right: 22px;
+  /* background:grey; */
+}
+
+.image-upload {
+  padding-left: 10px;
+}
+
+.submit-button {
+  background-color: #bd352e;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+  border: 0.17rem solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.submit-button:hover {
+  background-color: #a13129;
+  box-shadow: -2px 3px 0.3rem 1px rgba(44, 26, 26, 0.8);
+  padding: 0.7rem 0.2rem;
+}
+
+.submit-button:active {
+  background-color: rgb(14, 212, 14);
 }
 
 @media (max-width: 1051px) {
