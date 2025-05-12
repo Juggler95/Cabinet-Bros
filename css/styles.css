@@ -214,6 +214,31 @@ nav {
   background-color: #8e2e29;
 }
 
+/* about us section */
+.about-section {
+  display: flex;
+  max-width: 100%;
+  min-height: 400px;
+  background-color: lime;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.about-header {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: serif;
+  margin-bottom: 0.5rem;
+}
+
 /* @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
