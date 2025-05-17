@@ -43,6 +43,7 @@ body {
   margin-bottom: 2rem;
 
   box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  border: black solid 0.25rem;
 }
 
 .about-header {
