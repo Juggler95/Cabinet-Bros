@@ -216,67 +216,121 @@ nav {
 }
 
 /* testimonials section */
-.testimonial-header {
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 3rem;
-  text-decoration: underline;
+.testimonials-section {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 100rem; /* just for building. Remove after testimonials built */
+  padding: 3rem 1rem;
+  background-color: #d3cec9;
+  border-radius: 0.4rem;
+  border: black solid 0.25rem;
 }
 
-.testimonials-section {
+.testimonials-header {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #a13129;
+  text-decoration: solid underline #8e2e29;
+  text-decoration-thickness: 0.5rem;
+  text-align: center;
+}
+
+.testimonials-grid {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #636160;
-  max-width: 70%;
-  height: auto;
-
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 2rem;
+  max-width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-top: 3rem;
+  margin-inline: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
 
-  border: 0.25rem solid black;
-  border-radius: 1rem;
-  box-shadow: -7px 5px 10px rgba(0, 0, 0, 0.3);
-
+/* testimonial */
+.testimonial {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #8e2e29;
+  max-width: 60ch;
+  min-height: 10rem;
+  border-radius: 0.4rem;
+  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  padding: 2rem 1rem;
+  border: black solid 0.25rem;
+
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  gap: 1rem;
 }
 
-.testimonial-container {
-  max-width: 80ch;
-  background-color: #d3cec9;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: -7px 5px 10px rgba(0, 0, 0, 0.3);
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 1rem;
-  text-align: center;
-  border: 0.25rem solid #74241f;
-  align-self: flex-start;
+.testimonial-profile-picture {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: black solid 0.2rem;
+  background-color: white;
 }
 
 .testimonial-name {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #74241f;
-  margin-bottom: 1rem;
-  text-decoration: underline;
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
 }
 
-.testimonial-text {
-  color: #74241f;
-  font-weight: 400;
-  font-size: 1rem;
-  background-color: #d3cec9;
-  padding: 1rem;
-  max-width: 60ch;
+.see-more-testimonials {
+  background-color: #a13129;
+  color: black;
+  padding: 1rem 7rem;
   border-radius: 1rem;
-  box-shadow: -7px 5px 10px rgba(0, 0, 0, 0.3);
-  /* border: 0.1rem solid black; */
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border: black solid 0.25rem;
+}
+
+.see-more-testimonials:hover {
+  background-color: #74241f;
+  color: ivory;
+}
+
+@media (max-width: 50em) {
+  .testimonials-header {
+    font-size: 3rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0;
+    margin-inline: 0;
+  }
+
+  .testimonials-section {
+    padding: 0.5rem;
+  }
+
+  .testimonial-profile-picture {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    min-height: 4rem;
+
+    font-size: 1rem;
+  }
 }
 
 /* Media Query for Tablets (max-width: 768px) */
@@ -339,10 +393,6 @@ nav {
     font-size: 1.2rem;
     font-weight: 700;
   }
-
-  .testimonial-header {
-    font-size: 3rem;
-  }
 }
 
 /* Media Query for Mobile Devices (max-width: 535px) */
@@ -370,10 +420,6 @@ nav {
   .hero {
     padding: 2rem 1rem; /* Add padding for smaller screens */
   }
-
-  .testimonial-header {
-    font-size: 2.5rem;
-  }
 }
 
 /* Media Query for Extra Small Devices (max-width: 421px) */
@@ -393,9 +439,5 @@ nav {
   .hero {
     height: auto; /* Allow hero section to adjust height */
     padding: 1rem;
-  }
-
-  .testimonial-header {
-    font-size: 2rem;
   }
 }
