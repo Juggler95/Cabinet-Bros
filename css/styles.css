@@ -18,12 +18,12 @@ This palette ensures a cohesive and luxurious aesthetic for the website. */
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   box-sizing: border-box;
 }
 
 .luxurious-roman-regular {
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -101,7 +101,7 @@ nav {
 }
 
 .nav-item a::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -135,7 +135,7 @@ nav {
 }
 
 .hero {
-  background-image: url('https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg');
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -222,7 +222,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  margin-bottom: 100rem; /* just for building. Remove after testimonials built */
+  margin-bottom: 5rem;
   padding: 3rem 1rem;
   background-color: #d3cec9;
   border-radius: 0.4rem;
@@ -302,6 +302,67 @@ nav {
 .see-more-testimonials:hover {
   background-color: #74241f;
   color: ivory;
+}
+
+/* Footer section */
+footer {
+  background-color: #d3cec9;
+  text-align: center;
+  color: #8e2e29;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: auto; /* Push footer to the bottom */
+  padding-bottom: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.social-links-container {
+  display: flex;
+  width: auto;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.social-links {
+  text-decoration: none;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link-item {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.footer-link-item a {
+  text-decoration: none;
+  color: #8e2e29;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 @media (max-width: 50em) {
