@@ -18,12 +18,12 @@ This palette ensures a cohesive and luxurious aesthetic for the website. */
 * {
   padding: 0;
   margin: 0;
-  font-family: "Luxurious Roman", serif;
+  font-family: 'Luxurious Roman', serif;
   box-sizing: border-box;
 }
 
 .luxurious-roman-regular {
-  font-family: "Luxurious Roman", serif;
+  font-family: 'Luxurious Roman', serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -101,7 +101,7 @@ nav {
 }
 
 .nav-item a::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -135,7 +135,7 @@ nav {
 }
 
 .hero {
-  background-image: url("https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg");
+  background-image: url('https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -305,14 +305,63 @@ nav {
 }
 
 /*! Footer section */
-.social-icon {
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  background-color: #d3cec9;
+  padding: 1rem 0;
+  align-items: end;
+  border-top: 0.5rem solid #8e2e29;
+  justify-content: space-between;
+}
+
+.footer-column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.5rem;
+  margin-left: 3rem;
+}
+
+.footer-logo-image {
+  width: 5rem;
+  height: auto;
+  align-self: start;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.footer-social-icon {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
 }
 
-a {
+.footer-social-media-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-media-container a {
   text-decoration: none;
+}
+
+.footer-social-media-container:last-child {
+  margin-right: 3rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #74241f;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 @media (max-width: 50em) {
@@ -341,6 +390,22 @@ a {
     min-height: 4rem;
 
     font-size: 1rem;
+  }
+
+  .footer-content {
+    padding: 0;
+  }
+
+  .footer-column-1 {
+    margin-left: 1rem;
+  }
+
+  .footer-social-media-container {
+    gap: 0.5rem;
+  }
+
+  .footer-social-media-container:last-child {
+    margin-right: 1rem;
   }
 }
 
