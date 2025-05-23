@@ -48,14 +48,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5rem solid ivory;
-  border-left: none;
-  border-right: none;
+  border-top: 0.5rem solid ivory;
   background-color: #8e2e29;
   padding-bottom: 20rem;
 
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .form-header {

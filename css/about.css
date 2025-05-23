@@ -21,6 +21,10 @@ body {
   position: relative;
 }
 
+main {
+  margin-bottom: 5rem;
+}
+
 .about-section {
   display: flex;
   max-width: 100%;

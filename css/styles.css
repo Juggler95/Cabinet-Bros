@@ -329,6 +329,7 @@ nav {
   width: 5rem;
   height: auto;
   align-self: start;
+  cursor: pointer;
 }
 
 .footer-links {
@@ -362,6 +363,12 @@ nav {
   color: #74241f;
   font-size: 1rem;
   font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #ffa04d;
+  text-shadow: 0.5px 0.5px 1px black;
 }
 
 @media (max-width: 50em) {
