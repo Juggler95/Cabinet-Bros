@@ -1,7 +1,6 @@
-.door-face-styles {
-  background-color: lime;
-}
-
-.card {
-  background-color: #d3cec9;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Luxurious Roman", serif;
+  box-sizing: border-box;
 }
