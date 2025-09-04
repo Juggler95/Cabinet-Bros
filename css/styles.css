@@ -1,29 +1,23 @@
-/* feat: Document current color palette for the website
-
-Added a summary of the current color palette used across the website for consistency and future reference:
-
-- Primary Button Background: #74241f (Dark Red)
-- Button Hover Background: #a13129 (Lighter Red)
-- Header Background: #d3cec9 (Light Beige)
-- Text Color: #8e2e29 (Dark Brown)
-- Contact Button Text: ivory (#FFFFF0)
-- Hero Section Text Shadow: rgba(0, 0, 0, 0.5) (Semi-transparent Black)
-
-This palette ensures a cohesive and luxurious aesthetic for the website. */
-
-/* color palete ivory, #d3cec9, #74241f, #8e2e29, #a13129*/
-
-/* new color palete  #FFFFFF, #EEDBB9, #4F2F16, #D9AD6A, #000000, */
+/* ----------------------------
+   Color Palette (semantic names)
+   ----------------------------
+   - Primary: #74241f (Dark Red)
+   - Primary Hover: #a13129 (Lighter Red)
+   - Surface: #d3cec9 (Light Beige)
+   - Accent: #8e2e29 (Dark Brown)
+   - Light: ivory (#FFFFF0)
+   - Overlay: rgba(0, 0, 0, 0.5)
+*/
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   box-sizing: border-box;
 }
 
 .luxurious-roman-regular {
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,20 +28,19 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
   position: relative;
   z-index: -1;
 }
 
 header {
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
   min-height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  /* border-bottom: 1rem solid #8e2e29; */
 }
 
 main {
@@ -55,7 +48,6 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* margin-bottom: 100rem; */
   z-index: -1;
   flex-direction: column;
   align-items: center;
@@ -90,30 +82,29 @@ nav {
   padding-bottom: 0.25rem;
   position: relative;
   text-decoration: none;
-  color: #a13129;
+  color: var(--color-primary-hover);
   font-size: 1.6rem;
   font-weight: 700;
   margin-right: 1rem;
 }
 
 .nav-item a::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0; /* Start with no underline */
+  width: 0;
   height: 2px;
-  background-color: #8e2e29;
-  transition: width 0.3s ease-in-out; /* Smooth transition for the underline */
+  background-color: var(--color-accent);
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-item a:hover::before {
-  /* color: #eedbb9; */
-  width: 100%; /* Expand the underline on hover */
+  width: 100%;
 }
 
 .hamburger {
-  display: none; /* Hide hamburger icon by default */
+  display: none;
   cursor: pointer;
   margin-left: 1.5rem;
   outline: none;
@@ -125,13 +116,12 @@ nav {
   width: 25px;
   height: 3px;
   margin: 0.3rem auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #a13129;
+  background-color: var(--color-primary-hover);
 }
 
 .hero {
-  background-image: url('https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg');
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/23/11/55/kitchen-8714879_1280.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -140,11 +130,10 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--color-overlay);
   position: relative;
-  /* border-bottom: 10px solid #d9ad6a; */
   z-index: -1000;
-  border: 0.5rem solid #8e2e29;
+  border: 0.5rem solid var(--color-accent);
   border-left: none;
   border-right: none;
 }
@@ -156,11 +145,10 @@ nav {
 .hero-header {
   font-size: 9rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  color: ivory;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  color: var(--color-light);
+  text-shadow: 2px 2px 4px var(--color-overlay);
   white-space: nowrap;
   z-index: 2;
 }
@@ -168,16 +156,13 @@ nav {
 .hero-text p {
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-  max-width: 60ch;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin-bottom: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: ivory;
-  z-index: 2; /* Ensure text is above the overlay */
+  text-align: center;
   max-width: 40ch;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 4px var(--color-overlay);
+  color: var(--color-light);
+  z-index: 2;
 }
 
 .hero-image-overlay {
@@ -186,29 +171,27 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
-  z-index: -1; /* Ensure the overlay is above the background image */
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .contact-us {
-  background-color: #74241f;
-  color: ivory;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 1rem 6rem;
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: 800;
-
   text-decoration: none;
   border-radius: 1rem;
-
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   position: relative;
-  z-index: 1; /* Ensure button is above other content */
+  z-index: 1;
 }
 
 .contact-us:hover {
-  background-color: #8e2e29;
+  background-color: var(--color-accent);
 }
 
 /* testimonials section */
@@ -217,10 +200,9 @@ nav {
   max-width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
   padding: 3rem 1rem;
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
   border-radius: 0.4rem;
   border: black solid 0.25rem;
 }
@@ -228,8 +210,8 @@ nav {
 .testimonials-header {
   font-size: 4rem;
   font-weight: 600;
-  color: #a13129;
-  text-decoration: solid underline #8e2e29;
+  color: var(--color-primary-hover);
+  text-decoration: solid underline var(--color-accent);
   text-decoration-thickness: 0.5rem;
   text-align: center;
 }
@@ -239,27 +221,23 @@ nav {
   max-width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
-  margin-inline: 1rem;
+  margin: 3rem 1rem 5rem;
   padding: 1rem;
   justify-content: center;
-  margin-bottom: 5rem;
 }
 
-/* testimonial */
 .testimonial {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #8e2e29;
+  background-color: var(--color-accent);
   max-width: 60ch;
   min-height: 10rem;
   border-radius: 0.4rem;
   box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
   padding: 2rem 1rem;
   border: black solid 0.25rem;
-
   color: black;
   font-size: 1.25rem;
   font-weight: 400;
@@ -272,7 +250,7 @@ nav {
   height: 5rem;
   border-radius: 50%;
   border: black solid 0.2rem;
-  background-color: white;
+  background-color: var(--color-light);
 }
 
 .testimonial-name {
@@ -282,7 +260,7 @@ nav {
 }
 
 .see-more-testimonials {
-  background-color: #a13129;
+  background-color: var(--color-primary-hover);
   color: black;
   padding: 1rem 7rem;
   border-radius: 1rem;
@@ -296,19 +274,18 @@ nav {
 }
 
 .see-more-testimonials:hover {
-  background-color: #74241f;
-  color: ivory;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 /*! Footer section */
-
 .footer-content {
   display: flex;
   width: 100%;
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
   padding: 1rem 0;
   align-items: end;
-  border-top: 0.5rem solid #8e2e29;
+  border-top: 0.5rem solid var(--color-accent);
   justify-content: space-between;
 }
 
@@ -356,17 +333,18 @@ nav {
 
 .footer-links a {
   text-decoration: none;
-  color: #74241f;
+  color: var(--color-primary);
   font-size: 1rem;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
-  color: #ffa04d;
+  color: var(--color-primary-hover);
   text-shadow: 0.5px 0.5px 1px black;
 }
 
+/* Media queries untouched, except updated vars */
 @media (max-width: 50em) {
   .testimonials-header {
     font-size: 3rem;
@@ -391,7 +369,6 @@ nav {
   .testimonial {
     max-width: 100%;
     min-height: 4rem;
-
     font-size: 1rem;
   }
 
@@ -412,10 +389,9 @@ nav {
   }
 }
 
-/* Media Query for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger icon on smaller screens*/
+    display: block;
     margin-right: 1.5rem;
   }
 
@@ -437,16 +413,15 @@ nav {
     position: absolute;
     left: -100%;
     top: 125px;
-    gap: 0;
     flex-direction: column;
-    background-color: #d3cec9;
+    background-color: var(--color-surface);
     width: 100%;
     text-align: center;
     transition: left 0.3s;
     height: auto;
-    z-index: 10; /* Ensure menu is above other content */
+    z-index: 10;
     padding: 1rem 0;
-    border-top: 0.5rem solid #8e2e29; /* Add border to the top of the menu */
+    border-top: 0.5rem solid var(--color-accent);
   }
 
   .nav-menu {
@@ -454,12 +429,11 @@ nav {
   }
 
   .nav-menu.active {
-    left: 0; /* Slide in the menu when active */
+    left: 0;
   }
 
-  /* Hero section */
   .hero-header {
-    font-size: 5rem; /* Reduce font size */
+    font-size: 5rem;
   }
 
   .hero-text p {
@@ -474,10 +448,9 @@ nav {
   }
 }
 
-/* Media Query for Mobile Devices (max-width: 535px) */
 @media (max-width: 535px) {
   .nav-branding {
-    font-size: 1.8rem; /* Reduce branding font size */
+    font-size: 1.8rem;
   }
 
   .nav-menu {
@@ -485,11 +458,11 @@ nav {
   }
 
   .nav-item a {
-    font-size: 1rem; /* Reduce link font size */
+    font-size: 1rem;
   }
 
   .hero-header {
-    font-size: 3rem; /* Further reduce hero heading size */
+    font-size: 3rem;
   }
 
   .hero-text p {
@@ -497,18 +470,17 @@ nav {
   }
 
   .hero {
-    padding: 2rem 1rem; /* Add padding for smaller screens */
+    padding: 2rem 1rem;
   }
 }
 
-/* Media Query for Extra Small Devices (max-width: 421px) */
 @media (max-width: 421px) {
   .nav-menu {
-    font-size: 0.8rem; /* Reduce nav font size */
+    font-size: 0.8rem;
   }
 
   .hero-header {
-    font-size: 2.5rem; /* Adjust hero heading size */
+    font-size: 2.5rem;
   }
 
   .hero-text p {
@@ -516,7 +488,7 @@ nav {
   }
 
   .hero {
-    height: auto; /* Allow hero section to adjust height */
+    height: auto;
     padding: 1rem;
   }
 }

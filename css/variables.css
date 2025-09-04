@@ -1,0 +1,20 @@
+/* ----------------------------
+   Color Palette (semantic names)
+   ----------------------------
+   - Primary: #75251f (Dark Red)
+   - Primary Hover: #a13129 (Lighter Red)
+   - Surface: #d3cec9 (Light Beige)
+   - Accent: #8e2e29 (Dark Brown)
+   - Light: ivory (#FFFFF0)
+   - Overlay: rgba(0, 0, 0, 0.5)
+*/
+
+:root{
+  /* COLORS */
+  --color-primary: #74241F;
+  --color-primary-hover: #a13129;
+  --color-surface: #d3cec9;
+  --color-accent: #8e2e29;
+  --color-light: #FFFFF0;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+}
