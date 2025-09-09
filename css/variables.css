@@ -1,12 +1,12 @@
 /* ----------------------------
    Color Palette (semantic names)
    ----------------------------
-   - Primary: #75251f (Dark Red)
-   - Primary Hover: #a13129 (Lighter Red)
-   - Surface: #d3cec9 (Light Beige)
-   - Accent: #8e2e29 (Dark Brown)
-   - Light: ivory (#FFFFF0)
-   - Overlay: rgba(0, 0, 0, 0.5)
+   - Primary: #75251f (Dark Red) var(--color-primary)
+   - Primary Hover: #a13129 (Lighter Red) var(--color-primary-hover)
+   - Surface: #d3cec9 (Light Beige) var(--color-surface)
+   - Accent: #8e2e29 (Dark Brown) var(--color-accent)
+   - Light: ivory (#FFFFF0) var(--color-light)
+   - Overlay: rgba(0, 0, 0, 0.5) var(--color-hover)
 */
 
 :root{

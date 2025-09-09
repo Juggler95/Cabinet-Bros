@@ -1,12 +1,23 @@
+/* ----------------------------
+   Color Palette (semantic names)
+   ----------------------------
+   - Primary: #75251f (Dark Red) var(--color-primary)
+   - Primary Hover: #a13129 (Lighter Red) var(--color-primary-hover)
+   - Surface: #d3cec9 (Light Beige) var(--color-surface)
+   - Accent: #8e2e29 (Dark Brown) var(--color-accent)
+   - Light: ivory (#FFFFF0) var(--color-light)
+   - Overlay: rgba(0, 0, 0, 0.5) var(--color-overlay)
+*/
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   box-sizing: border-box;
 }
 
 .luxurious-roman-regular {
-  font-family: 'Luxurious Roman', serif;
+  font-family: "Luxurious Roman", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -17,7 +28,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
   position: relative;
 }
 
@@ -39,14 +51,14 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
-  color: #a13129;
-  background-color: #d3cec9;
+  color: var(--color-primary-hover);
+  background-color: var(--color-surface);
   border-radius: 0.4rem;
   padding-inline: 3rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
 
-  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 7px 10px var(--color-overlay);
   border: black solid 0.25rem;
 }
 
@@ -66,11 +78,11 @@ article {
   display: flex;
   max-width: 100%;
   flex-direction: column;
-  background-color: #a13129;
+  background-color: var(--color-primary-hover);
   padding-inline: 3rem;
   padding-bottom: 3rem;
   border-radius: 0.4rem;
-  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 7px 10px var(--color-overlay);
 }
 
 .about-section-container {
@@ -79,9 +91,9 @@ article {
   flex-direction: row;
   align-items: center;
   margin-top: 3rem;
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
   border-radius: 0.4rem;
-  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 7px 10px var(--color-overlay);
 }
 
 .about-image {
@@ -90,7 +102,7 @@ article {
   height: auto;
   border-radius: 0.4rem;
   margin: 1rem 1rem;
-  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 7px 10px var(--color-overlay);
 }
 
 .about-paragraph {

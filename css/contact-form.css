@@ -1,27 +1,20 @@
-/* feat: Document current color palette for the website
-
-Added a summary of the current color palette used across the website for consistency and future reference:
-
-- Primary Button Background: #74241f (Dark Red)
-- Button Hover Background: #a13129 (Lighter Red)
-- Header Background: #d3cec9 (Light Beige)
-- Text Color: #8e2e29 (Dark Brown)
-- Contact Button Text: ivory (#FFFFF0)
-- Hero Section Text Shadow: rgba(0, 0, 0, 0.5) (Semi-transparent Black)
-
-This palette ensures a cohesive and luxurious aesthetic for the website. */
-
-/* color palete ivory, #d3cec9, #74241f, #8e2e29, #a13129*/
-
-/* different color palete  #FFFFFF, #EEDBB9, #4F2F16, #D9AD6A, #000000, */
-
-/* ignor */
+/* ----------------------------
+   Color Palette (semantic names)
+   ----------------------------
+   - Primary: #75251f (Dark Red) var(--color-primary)
+   - Primary Hover: #a13129 (Lighter Red) var(--color-primary-hover)
+   - Surface: #d3cec9 (Light Beige) var(--color-surface)
+   - Accent: #8e2e29 (Dark Brown) var(--color-accent)
+   - Light: ivory (#FFFFF0) var(--color-light)
+   - Overlay: rgba(0, 0, 0, 0.5) var(--color-overlay)
+*/
 
 * {
   padding: 0;
   margin: 0;
   font-family: 'Luxurious Roman', serif;
   box-sizing: border-box;
+  outline: none;
 }
 
 .luxurious-roman-regular {
@@ -41,15 +34,15 @@ body {
 }
 
 body {
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 0.5rem solid ivory;
-  background-color: #8e2e29;
+  border-top: 0.5rem solid var(--color-light);
+  background-color: var(--color-accent);
   padding-bottom: 20rem;
 
   /* width: 100%;
@@ -60,7 +53,7 @@ main {
   font-size: 6rem;
   font-weight: 600;
   margin-top: 2rem;
-  color: ivory;
+  color: var(--color-light);
   text-shadow: -0.1ch 0.15ch 2px rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
 }
@@ -70,7 +63,7 @@ main {
   max-width: 40%;
   min-height: 600px;
 
-  background-color: #d3cec9;
+  background-color: var(--color-surface);
   margin-top: 2rem;
   border-radius: 0.5rem;
   justify-content: center;
@@ -99,9 +92,9 @@ input {
   min-height: 1.5rem;
   /*font-family: sans-serif;*/
   border: none;
-  border-bottom: 0.13rem solid #8e2e29;
-  /* background-color: rgb(211, 206, 201); */
-  background-color: rgb(255, 255, 255);
+  border-bottom: 0.13rem solid var(--color-accent);
+  /* background-color: #d3cfca; */
+  background-color: var(--color-light);
 
   border-radius: 0.5rem;
   transition: all 0.3s ease;
@@ -111,7 +104,7 @@ input {
 input:focus {
   border: none;
   box-shadow: none;
-  border-bottom: 0.15rem solid #8e2e29;
+  border-bottom: 0.15rem solid var(--color-accent);
 }
 
 input:valid {
@@ -119,13 +112,13 @@ input:valid {
 }
 
 input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--color-overlay);
   padding-left: 1ch; /* was 20px before removing file upload */
 }
 
 label {
   margin-bottom: 0.5rem;
-  color: #74241f;
+  color: var(--color-primary);
   font-weight: 600;
 }
 
@@ -136,7 +129,7 @@ label {
 
 .message:valid,
 .image-upload:valid {
-  border-bottom: 0.13rem solid #8e2e29;
+  border-bottom: 0.13rem solid var(--color-accent);
 }
 
 .image-upload {
@@ -166,7 +159,7 @@ label {
 }
 
 .submit-button {
-  background-color: #bd352e;
+  background-color: var(--color-primary-hover); /* was #bd352e*/
   border: none;
   outline: none;
   padding: 0.5rem 0;
@@ -181,7 +174,7 @@ label {
 }
 
 .submit-button:hover {
-  background-color: #a13129;
+  background-color: var(--color-primary-hover);
   box-shadow: -2px 3px 0.3rem 1px rgba(44, 26, 26, 0.8);
   padding: 0.7rem 0.2rem;
 }
